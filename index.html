@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introduction to R</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Joel Nitta" />
+    <meta name="date" content="2022-05-13" />
+    <script src="index_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+# Introduction to R
+
+### https://joelnitta.github.io/seimei-gairon-r-intro/
+
+.large[
+生命科学概論
+
+Joel Nitta
+
+2022-05-13
+]
+
+---
+## 注意点 Important notice (1/2)
+
+- Zoom参加者の名前表⽰は**「学籍番号と⽒名」**とすること
+
+- ホストの先⽣の要請があったら、アンケートに**「学籍番号と⽒名」**を
+書き込むこと
+
+- アンケートは速やかに対応すること
+
+- Please make your name in the Zoom system as **"Student ID_Name"**
+
+- When requested, please write your **"Student ID_Name"** in the survey
+
+- Please respond to the survey promptly
+
+---
+## 注意点 Important notice (2/2)
+
+- 質問するときには&lt;span style="text-decoration:underline"&gt;声をかける&lt;/span&gt;か&lt;span style="text-decoration:underline"&gt;挙⼿機能で⼿を挙げ&lt;/span&gt;、&lt;span style="text-decoration:underline"&gt;ビデオをオンに
+して名乗り&lt;/span&gt;、質問後に**「質問しました︓学籍番号と⽒名」**とチャット
+に書き込むこ
+
+- Please &lt;span style="text-decoration:underline"&gt;speak directly after unmuting&lt;/span&gt;, or use &lt;span style="text-decoration:underline"&gt;"Raise-hands
+function"&lt;/span&gt;, and then turn your video on to make question. After the
+question, please write **"I questioned: Student ID_Name"** in the chat
+window.
+
+---
+background-image: url("https://www.r-project.org/Rlogo.png")
+background-position: 80% 30%
+
+## What is R?
+
+- **Free programming language**
+
+--
+
+- Has a **welcoming community of users&lt;br&gt;who help each other**
+
+--
+
+- Includes 1,000s of extensions = **"packages"**
+
+--
+
+- Can be used for data analysis...
+
+--
+
+- and **many, many other tasks**
+  - generate reports (Word, HTML, PDF)
+  - make websites (this presentation)
+  - send or download emails / tweets
+  - etc...
+
+---
+## Why use R?
+
+(instead of e.g., Excel)
+
+- Can **automate** tasks
+
+- Allows you (and others) to **reproduce** your work
+
+- **Saves time** (once you learn how to use it)
+
+---
+
+## What is RStudio?
+
+.pull-left[
+- A free program to help you write and run R code
+
+- **Separate** installation from R itself
+
+- **The easiest way to use R**
+]
+
+.pull-right[
+&lt;img src="assets/rstudio_ide.png" alt="Computer with RStudio screen and list of things RStudio can do" height="400"&gt;
+]
+
+
+---
+
+## What is live coding?
+
+- I will demonstrate how to use R on my computer
+
+- **Please do the same thing on your computer**
+
+- Let me know anytime if you have any questions
+
+- I will ask if you are able to use R like I show you
+
+- **Please respond using zoom reactions**
+
+- 日本語でオッケーです👍
+
+---
+
+## Recommended screen setup
+
+.center[
+&lt;img src="assets/screen_setup.png" alt="Screenshot showing screen split into three portions, with zoom in upper-left, google docs in lower left, and RStudio in right half" height="500"&gt;
+]
+
+---
+
+## What if I can't install R and/or RStudio?
+
+.pull-left[
+You can use **RStudio Cloud**
+
+- Free access to RStudio through your web browser
+- Click "Sign Up" to create account
+]
+
+.pull-right[
+![Screenshot of RStudio Cloud webpage with arrow pointing to 'sign up' button](assets/rstudio_cloud.png)
+https://rstudio.cloud/
+]
+
+---
+
+## Outline
+
+- Introduction 15:10 - 15:20
+- How to use RStudio 15:20 - 15:30
+- Basic R commands 15:30 - 15:45
+- Variables (objects) 15:45 - 16:00
+- Functions and packages 16:00 - 16:30
+
+Break (5 min)
+
+- How to get help 16:35 - 16:45
+- Projects in RStudio 16:45 - 17:00
+- Data loading and dataframes 17:30 - 18:00
+- Writing reports (demo) 18:00 - 18:30
+
+---
+
+## References
+
+- [Notes](https://docs.google.com/document/d/1G11-8sXl5hbb71ky-YmeHpDvPWXkp0Y-Q65V-59-z78/edit#) from ["Introduction to data analysis with R"](https://swcarpentry-ja.github.io/2021-04-02-todai-online-ja/) Software Carpentry Workshop
+
+- [R for Reproducible Scientific Analysis (JA)](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/)
+
+- [R for Reproducible Scientific Analysis (EN)](https://swcarpentry.github.io/r-novice-gapminder/)
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

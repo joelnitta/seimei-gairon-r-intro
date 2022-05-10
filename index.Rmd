@@ -1,0 +1,209 @@
+---
+title: "Introduction to R"
+subtitle: "https://joelnitta.github.io/seimei-giron-r-intro/"
+author: 
+  - "Joel Nitta"
+date: '2022-05-13'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width = 9, fig.height = 3.5, fig.retina = 3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF",
+  text_font_size = "1.25rem",
+  extra_css = list(
+    ".large" = list("font-size" = "120%")
+  )
+)
+```
+
+# Introduction to R
+
+### https://joelnitta.github.io/seimei-gairon-r-intro/
+
+.large[
+生命科学概論
+
+Joel Nitta
+
+2022-05-13
+]
+
+---
+## 注意点 Important notice (1/2)
+
+- Zoom参加者の名前表⽰は**「学籍番号と⽒名」**とすること
+
+- ホストの先⽣の要請があったら、アンケートに**「学籍番号と⽒名」**を
+書き込むこと
+
+- アンケートは速やかに対応すること
+
+- Please make your name in the Zoom system as **"Student ID_Name"**
+
+- When requested, please write your **"Student ID_Name"** in the survey
+
+- Please respond to the survey promptly
+
+---
+## 注意点 Important notice (2/2)
+
+- 質問するときには<span style="text-decoration:underline">声をかける</span>か<span style="text-decoration:underline">挙⼿機能で⼿を挙げ</span>、<span style="text-decoration:underline">ビデオをオンに
+して名乗り</span>、質問後に**「質問しました︓学籍番号と⽒名」**とチャット
+に書き込むこ
+
+- Please <span style="text-decoration:underline">speak directly after unmuting</span>, or use <span style="text-decoration:underline">"Raise-hands
+function"</span>, and then turn your video on to make question. After the
+question, please write **"I questioned: Student ID_Name"** in the chat
+window.
+
+---
+background-image: url("https://www.r-project.org/Rlogo.png")
+background-position: 80% 30%
+
+## What is R?
+
+- **Free programming language**
+
+--
+
+- Has a **welcoming community of users<br>who help each other**
+
+--
+
+- Includes 1,000s of extensions = **"packages"**
+
+--
+
+- Can be used for data analysis...
+
+--
+
+- and **many, many other tasks**
+  - generate reports (Word, HTML, PDF)
+  - make websites (this presentation)
+  - send or download emails / tweets
+  - etc...
+
+---
+## Why use R?
+
+(instead of e.g., Excel)
+
+- Can **automate** tasks
+
+- Allows you (and others) to **reproduce** your work
+
+- **Saves time** (once you learn how to use it)
+
+---
+
+## What is RStudio?
+
+.pull-left[
+- A free program to help you write and run R code
+
+- **Separate** installation from R itself
+
+- **The easiest way to use R**
+]
+
+.pull-right[
+<img src="assets/rstudio_ide.png" alt="Computer with RStudio screen and list of things RStudio can do" height="400">
+]
+
+
+---
+
+## What is live coding?
+
+- I will demonstrate how to use R on my computer
+
+- **Please do the same thing on your computer**
+
+- Let me know anytime if you have any questions
+
+- I will ask if you are able to use R like I show you
+
+- **Please respond using zoom reactions**
+
+- 日本語でオッケーです`r emo::ji("thumbs up")`
+
+---
+
+## Recommended screen setup
+
+.center[
+<img src="assets/screen_setup.png" alt="Screenshot showing screen split into three portions, with zoom in upper-left, google docs in lower left, and RStudio in right half" height="500">
+]
+
+---
+
+## What if I can't install R and/or RStudio?
+
+.pull-left[
+You can use **RStudio Cloud**
+
+- Free access to RStudio through your web browser
+- Click "Sign Up" to create account
+]
+
+.pull-right[
+![Screenshot of RStudio Cloud webpage with arrow pointing to 'sign up' button](assets/rstudio_cloud.png)
+https://rstudio.cloud/
+]
+
+---
+
+## Outline
+
+- Introduction 15:10 - 15:20
+- How to use RStudio 15:20 - 15:30
+- Basic R commands 15:30 - 15:45
+- Variables (objects) 15:45 - 16:00
+- Functions and packages 16:00 - 16:30
+
+Break (5 min)
+
+- How to get help 16:35 - 16:45
+- Projects in RStudio 16:45 - 17:00
+- Data loading and dataframes 17:30 - 18:00
+- Writing reports (demo) 18:00 - 18:30
+
+---
+
+## References
+
+- [Notes](https://docs.google.com/document/d/1G11-8sXl5hbb71ky-YmeHpDvPWXkp0Y-Q65V-59-z78/edit#) from ["Introduction to data analysis with R"](https://swcarpentry-ja.github.io/2021-04-02-todai-online-ja/) Software Carpentry Workshop
+
+- [R for Reproducible Scientific Analysis (JA)](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/)
+
+- [R for Reproducible Scientific Analysis (EN)](https://swcarpentry.github.io/r-novice-gapminder/)
+
+
+
