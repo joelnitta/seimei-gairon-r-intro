@@ -303,3 +303,6 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 .large {
   font-size: 120%;
 }
+.small {
+  font-size: 80%;
+}
