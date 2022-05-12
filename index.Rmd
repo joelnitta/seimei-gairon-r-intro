@@ -116,7 +116,7 @@ window.
 .large[
 1. To learn **basic usage of R and RStudio**
 
-2. To learn **how to teach yourself** more
+2. To learn **how to teach yourself** more about R
 ]
 
 ---
@@ -217,7 +217,7 @@ background-position: 80% 30%
 ## What if I can't install R and/or RStudio?
 
 .pull-left[
-You can use **RStudio Cloud**
+You can use **RStudio Cloud** https://rstudio.cloud/
 
 - Free access to RStudio through your web browser
 - Click "Sign Up" to create account
@@ -225,6 +225,7 @@ You can use **RStudio Cloud**
 
 .pull-right[
 ![Screenshot of RStudio Cloud webpage with arrow pointing to 'sign up' button](assets/rstudio_cloud.png)
+<br>
 https://rstudio.cloud/
 ]
 
@@ -293,7 +294,7 @@ Available on [Amazon](https://www.amazon.co.jp/%E6%94%B9%E8%A8%822%E7%89%88-R%E3
 ## Demo: Writing reports with R
 
 - The code used in this demonstration: https://github.com/joelnitta/example_rmd
-- Your goal for learning R: **be able to write a report like this for a term paper**
+- **Your goal for learning R**: write a report like this **for a term paper**
 
 You can download the code by clicking on "Code", then "Download ZIP"
 
