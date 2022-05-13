@@ -111,6 +111,21 @@ window.
 ]
 
 ---
+## About you
+
+What is your previous programming experience? (multiple answers OK)
+
+-  I have never used any programming language
+
+-  I know a litte about programming in a language other than R
+
+-  I know a little about programming in R
+
+-  I program frequently in a language other than R
+
+-  I program frequently in R
+
+---
 ## Goals of this class
 
 .large[
@@ -193,7 +208,20 @@ background-position: 80% 30%
 - I will demonstrate how to use R on my computer
 - **Please do the same thing on your computer**
   - Let me know anytime if you have any questions
-<br><br>
+
+]
+
+.pull-right[
+<img src="https://datacarpentry.org/images//involved2.jpg" alt="Data Carpentry photo of live coding" height="330">
+<br>
+.small[https://datacarpentry.org/]
+]
+
+---
+
+## What is live coding?
+
+.pull-left[
 - I will ask if you are able to use R like I show you
   - **Please respond using zoom reactions**
 <br><br>
