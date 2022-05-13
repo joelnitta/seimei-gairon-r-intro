@@ -310,18 +310,18 @@ Available on [Amazon](https://www.amazon.co.jp/%E6%94%B9%E8%A8%822%E7%89%88-R%E3
 
 ## Outline
 
-- Introduction 15:10 - 15:20
-- Writing reports (demo) 15:20 - 15:30
-- How to use RStudio and basic R commands 15:30 - 16:00
-- Variables (objects) 16:00 - 16:15
+- Introduction
+- Writing reports (demo)
+- How to use RStudio and basic R commands
+- Variables (objects)
 
 5 min. break (install tidyverse)
 
-- Functions and packages 16:20 - 16:40
-- How to get help 16:40 - 17:00
-- Projects in RStudio 17:00 - 17:15
-- Data loading and dataframes 17:15 - 18:00
-- Wrap-up and questions 18:00 - 18:30
+- Functions and packages
+- How to get help
+- Projects in RStudio
+- Data loading and dataframes
+- Wrap-up and questions
 
 ---
 
