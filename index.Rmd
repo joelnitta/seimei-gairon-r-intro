@@ -267,6 +267,12 @@ https://rstudio.cloud/
 
 - [R for Reproducible Scientific Analysis (EN)](https://swcarpentry.github.io/r-novice-gapminder/)
 
+.center[
+<img src="assets/swc.png" alt="Software Carpentry website screenshot" height="250">
+]
+
+https://software-carpentry.org/
+
 ---
 
 ## References
